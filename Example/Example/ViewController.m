@@ -57,6 +57,14 @@
                                                            highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
                                                             backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
                                                  backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    DCPathItemButton *itemButton_6 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-sleep"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    DCPathItemButton *itemButton_7 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-sleep"]
+                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
+                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
+                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
     // Add the item button into the center button
     //
@@ -64,7 +72,10 @@
                                  itemButton_2,
                                  itemButton_3,
                                  itemButton_4,
-                                 itemButton_5
+                                 itemButton_5,
+                                 itemButton_6,
+                                 itemButton_7
+                                 
                                  ]];
     
     // Change the bloom radius, default is 105.0f
@@ -73,18 +84,18 @@
     
     // Change the DCButton's center
     //
-    dcPathButton.dcButtonCenter = CGPointMake(self.view.bounds.size.width / 2, self.view.bounds.size.height - 25.5f);
+//    dcPathButton.dcButtonCenter = CGPointMake(self.view.bounds.size.width / 2, self.view.bounds.size.height - 25.5f);
     
     // Setting the DCButton appearance
     //
     dcPathButton.allowSounds = YES;
     dcPathButton.allowCenterButtonRotation = YES;
     
-    dcPathButton.bottomViewColor = [UIColor grayColor];
+//    dcPathButton.bottomViewColor = [UIColor colorWithRed:0.1175 green:0.6957 blue:0.4928 alpha:1.0];
     
-    dcPathButton.bloomDirection = kDCPathButtonBloomDirectionTopRight;
-    dcPathButton.dcButtonCenter = CGPointMake(10 + dcPathButton.frame.size.width/2, self.view.frame.size.height - dcPathButton.frame.size.height/2 - 10);
-    dcPathButton.bottomViewColor = [UIColor redColor];
+    dcPathButton.bloomDirection = kDCPathButtonBloomDirectionLeft;
+    dcPathButton.dcButtonCenter = CGPointMake(self.view.bounds.size.width/2, self.view.frame.size.height - dcPathButton.frame.size.height/2 - 110);
+    dcPathButton.bottomViewColor = [UIColor colorWithRed:0.6765 green:0.9165 blue:0.2057 alpha:1.0];
     
     [self.view addSubview:dcPathButton];
 

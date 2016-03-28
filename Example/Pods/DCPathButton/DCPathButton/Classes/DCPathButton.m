@@ -497,7 +497,7 @@
     if (self.allowCenterButtonRotation) {
         [UIView animateWithDuration:0.1575f
                          animations:^{
-                             _pathCenterButton.transform = CGAffineTransformMakeRotation(-0.75f * M_PI);
+                             _pathCenterButton.transform = CGAffineTransformMakeRotation(0.8f * M_PI);
                          }];
     }
     

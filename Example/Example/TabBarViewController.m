@@ -85,7 +85,7 @@
     dcPathButton.allowSounds = YES;
     dcPathButton.allowCenterButtonRotation = YES;
     
-    dcPathButton.bottomViewColor = [UIColor grayColor];
+    dcPathButton.bottomViewColor = [UIColor colorWithRed:0.1338 green:0.2979 blue:0.9083 alpha:1.0];
     
     dcPathButton.bloomDirection = kDCPathButtonBloomDirectionTop;
     
